@@ -1,0 +1,13 @@
+2024-03-03 11:36:26.115183
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 80, in <module>
+    Res[m] = k_nn(train_data,train_label,test_data,test_label)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 56, in k_nn
+    distance[t,1] = np.linalg.norm(test_data[i] - train_data[t])
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\numpy\matrixlib\defmatrix.py", line 189, in __getitem__
+    def __getitem__(self, index):
+
+

@@ -1,0 +1,10 @@
+2024-03-03 12:08:55.790766
+<class 'RuntimeError'>
+RuntimeError('Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!')
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 90, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 75, in k_nn
+    if prediction == test_label_tensor[i]:
+
+

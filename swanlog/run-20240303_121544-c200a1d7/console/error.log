@@ -1,0 +1,34 @@
+2024-03-03 12:17:18.923490
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "c:\Users\47131\.conda\envs\pytorch\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+
+  File "c:\Users\47131\.conda\envs\pytorch\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+
+  File "c:\Users\47131\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 90, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 61, in k_nn
+    distance[t,1] = torch.norm(test_data_tensor[i]-train_data_tensor[t])
+
+

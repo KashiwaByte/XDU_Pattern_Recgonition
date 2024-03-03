@@ -1,0 +1,13 @@
+2024-03-03 11:50:32.883627
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 83, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 54, in k_nn
+    distance[t,1] = torch.norm(test_data_tensor[i]-train_data_tensor[t])
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\torch\functional.py", line 1584, in norm
+    if dim is not None:
+
+

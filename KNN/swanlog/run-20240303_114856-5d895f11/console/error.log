@@ -1,0 +1,10 @@
+2024-03-03 11:48:57.810367
+<class 'AttributeError'>
+AttributeError("'Tensor' object has no attribute 'dstype'")
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 83, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 65, in k_nn
+    a = a.dstype(int)
+
+

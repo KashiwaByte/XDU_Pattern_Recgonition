@@ -8,7 +8,7 @@ from sklearn import model_selection
 from sklearn import datasets
 import swanlab
 
-iris = pd.read_csv('data\iris.data',header=None,sep=',')
+iris = pd.read_csv('data/iris.data',header=None,sep=',')
 
 X, y = datasets.load_iris(return_X_y=True)
 
@@ -115,8 +115,8 @@ plt.ylabel('Accuracy')
 plt.ylim((0.8,1))            # y坐标的范围
 #画图
 plt.plot(x,Res,'b')
-swanlab.log({"result":swanlab.Image(plt)})
-plt.savefig("fisher_k近邻_Iris.jpg",dpi=2000)
+swanlab.log({"fisher_KNN_Iris":swanlab.Image(plt)})
+plt.savefig("result/fisher_KNN_Iris.jpg",dpi=2000)
 
 
 

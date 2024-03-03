@@ -1,0 +1,4 @@
+SwanLab INFO [2024-03-03 12:18:03,743] Experiment KNN_Usps_GPU_Mar03_12-18-02 has been registered.
+SwanLab INFO [2024-03-03 12:18:03,744] Run data will be saved locally in D:\XDU_Pattern_Recgonition\KNN\swanlog\run-20240303_121802-306c50a7
+SwanLab INFO [2024-03-03 12:18:03,745] Experiment_name: KNN_Usps_GPU_Mar03_12-18-02
+SwanLab INFO [2024-03-03 12:18:03,745] Run `swanlab watch` to view SwanLab Experiment Dashboard

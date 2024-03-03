@@ -1,0 +1,10 @@
+2024-03-03 11:52:06.193220
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 83, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 55, in k_nn
+    distance[t,0] = train_label_tensor[t]           # ¥¢¥Ê±Í«©∫Õ≈∑ Ωæ‡¿Î
+
+

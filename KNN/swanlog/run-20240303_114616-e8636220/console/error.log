@@ -1,0 +1,13 @@
+2024-03-03 11:46:17.820923
+<class 'RuntimeError'>
+RuntimeError('cdist only supports at least 2D tensors, X1 got: 1D')
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 83, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 54, in k_nn
+    distance[t,1] = torch.cdist(test_data_tensor[i],train_data_tensor[t])
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\torch\functional.py", line 1315, in cdist
+    return _VF.cdist(x1, x2, p, None)  # type: ignore[attr-defined]
+
+

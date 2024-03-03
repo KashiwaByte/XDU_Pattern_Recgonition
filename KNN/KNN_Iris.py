@@ -6,10 +6,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import model_selection
 from sklearn import datasets
+import swanlab
 
-iris = pd.read_csv('iris.data',header=None,sep=',')
+iris = pd.read_csv('data/iris.data',header=None,sep=',')
 
-
+swanlab.init(experiment_name="KNN_Iris")
 
 
 
@@ -46,6 +47,7 @@ def k_nn(X):
         if prediction == test[0,4]:
             accuracy += 1
     Accuracy = accuracy/150
+    swanlab.log({"Accuracy":Accuracy})
     if k==1:
         print(f"k={k}时，Iris数据集的最近邻准确率为：",Accuracy)
     else:
@@ -82,7 +84,8 @@ plt.ylabel('Accuracy')
 plt.ylim((0.8,1))            # y坐标的范围
 #画图
 plt.plot(x,Res,'b')
-plt.savefig("k近邻_Iris.jpg",dpi=2000)
+swanlab.log({"result":swanlab.Image(plt)})
+plt.savefig("result/k近邻_Iris.jpg",dpi=2000)
 
 
 

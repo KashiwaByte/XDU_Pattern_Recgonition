@@ -1,0 +1,10 @@
+2024-03-03 11:45:40.851221
+<class 'TypeError'>
+TypeError("cdist() missing 1 required positional argument: 'x2'")
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 83, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 54, in k_nn
+    distance[t,1] = torch.cdist(test_data_tensor[i] - train_data_tensor[t])
+
+

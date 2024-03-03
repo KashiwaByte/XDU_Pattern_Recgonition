@@ -1,0 +1,10 @@
+2024-03-03 12:05:59.568918
+<class 'TypeError'>
+TypeError("norm() got an unexpected keyword argument 'device'")
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 88, in <module>
+    Res[m] = k_nn(train_data_tensor,train_label_tensor,test_data_tensor,test_label_tensor)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 59, in k_nn
+    distance[t,1] = torch.norm(test_data_tensor[i]-train_data_tensor[t],device=device)
+
+

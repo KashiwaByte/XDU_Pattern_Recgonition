@@ -1,0 +1,5 @@
+SwanLab INFO [2024-03-03 11:34:58,719] Experiment KNN_Usps_Mar03_11-34-57 has been registered.
+SwanLab INFO [2024-03-03 11:34:58,720] Run data will be saved locally in D:\XDU_Pattern_Recgonition\swanlog\run-20240303_113457-6c9bc476
+SwanLab INFO [2024-03-03 11:34:58,720] Experiment_name: KNN_Usps_Mar03_11-34-57
+SwanLab INFO [2024-03-03 11:34:58,721] Run `swanlab watch` to view SwanLab Experiment Dashboard
+SwanLab ERROR [2024-03-03 11:34:58,722] Error happended while training, SwanLab will throw it

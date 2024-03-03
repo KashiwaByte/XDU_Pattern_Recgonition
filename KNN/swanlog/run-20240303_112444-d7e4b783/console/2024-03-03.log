@@ -1,0 +1,7 @@
+1 [SwanLab-INFO]:        Experiment KNN_Usps_Mar03_11-24-44 has been registered.
+2 [SwanLab-INFO]:        Run data will be saved locally in D:\XDU_Pattern_Recgonition\KNN\swanlog\run-20240303_112444-d7e4b783
+3 [SwanLab-INFO]:        Experiment_name: KNN_Usps_Mar03_11-24-44
+4 [SwanLab-INFO]:        Run `swanlab watch` to view SwanLab Experiment Dashboard
+5 k=1时，Iris数据集的最近邻准确率为： 0.9436970602889886
+6 k=2时，Iris数据集的k近邻准确率为： 0.9412057797708022
+7 [SwanLab-INFO]:        The current experiment KNN_Usps_Mar03_11-24-44 has been completed, SwanLab will close it automatically

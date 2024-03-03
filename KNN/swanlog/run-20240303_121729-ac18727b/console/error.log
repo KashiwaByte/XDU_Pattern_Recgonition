@@ -1,0 +1,22 @@
+2024-03-03 12:17:30.992117
+<class 'FileNotFoundError'>
+FileNotFoundError(2, "Unable to synchronously open file (unable to open file: name = 'KNN/data/usps.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)")
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 33, in <module>
+    train_data,train_label,test_data,test_label = pre_handle()
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps_GPU.py", line 18, in pre_handle
+    with h5py.File('KNN/data/usps.h5') as hf:
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\h5py\_hl\files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\h5py\_hl\files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+
+  File "h5py\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+
+  File "h5py\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+
+  File "h5py\h5f.pyx", line 102, in h5py.h5f.open
+
+

@@ -3,9 +3,10 @@
 
 import pandas as pd
 import numpy as np
+import swanlab
 
-sonar = pd.read_csv('sonar.all-data',header=None,sep=',')
-
+sonar = pd.read_csv('data/sonar.all-data',header=None,sep=',')
+swanlab.init(experiment_name="KNN_Sonar")
 
 
 def k_nn(X):
@@ -36,6 +37,7 @@ def k_nn(X):
         if prediction == test[0,60]:
             accuracy += 1
     Accuracy = accuracy/208
+    swanlab.log({"Accuracy":Accuracy})
     if k==1:
         print("k = %d时，Sonar数据集的最近邻准确率为："%k,Accuracy)
     else:
@@ -68,7 +70,8 @@ plt.ylabel('Accuracy')
 plt.ylim((0,1))            # y坐标的范围
 #画图
 plt.plot(x,Res,'r')
-plt.savefig("k近邻_sonar.jpg",dpi=2000)
+swanlab.log({'result':swanlab.Image(plt)})
+plt.savefig("result/KNN_Sonar.jpg",dpi=2000)
 
 
 

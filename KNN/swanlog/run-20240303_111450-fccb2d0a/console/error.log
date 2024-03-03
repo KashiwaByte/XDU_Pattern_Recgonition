@@ -1,0 +1,31 @@
+2024-03-03 11:14:59.984118
+<class 'FileNotFoundError'>
+FileNotFoundError(2, 'No such file or directory')
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Iris.py", line 88, in <module>
+    plt.savefig("result/k½üÁÚ_Iris.jpg",dpi=2000)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\pyplot.py", line 1023, in savefig
+    res = fig.savefig(*args, **kwargs)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\figure.py", line 3378, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\backend_bases.py", line 2366, in print_figure
+    result = print_method(
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\backend_bases.py", line 2232, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\backends\backend_agg.py", line 526, in print_jpg
+    self._print_pil(filename_or_obj, "jpeg", pil_kwargs)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\backends\backend_agg.py", line 458, in _print_pil
+    mpl.image.imsave(
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\matplotlib\image.py", line 1689, in imsave
+    image.save(fname, **pil_kwargs)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\PIL\Image.py", line 2350, in save
+    fp = builtins.open(filename, "w+b")
+
+

@@ -1,0 +1,5 @@
+SwanLab INFO [2024-03-03 11:09:40,800] Experiment fisher_KNN_Iris_Mar03_11-09-39 has been registered.
+SwanLab INFO [2024-03-03 11:09:40,801] Run data will be saved locally in D:\XDU_Pattern_Recgonition\KNN\swanlog\run-20240303_110939-b7d39e81
+SwanLab INFO [2024-03-03 11:09:40,801] Experiment_name: fisher_KNN_Iris_Mar03_11-09-39
+SwanLab INFO [2024-03-03 11:09:40,802] Run `swanlab watch` to view SwanLab Experiment Dashboard
+SwanLab INFO [2024-03-03 11:09:52,666] The current experiment fisher_KNN_Iris_Mar03_11-09-39 has been completed, SwanLab will close it automatically

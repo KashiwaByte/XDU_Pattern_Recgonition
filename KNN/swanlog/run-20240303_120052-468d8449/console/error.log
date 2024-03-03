@@ -1,0 +1,16 @@
+2024-03-03 12:03:59.638636
+<class 'KeyboardInterrupt'>
+KeyboardInterrupt()
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps.py", line 73, in <module>
+    Res[m] = k_nn(train_data,train_label,test_data,test_label)
+
+  File "D:\XDU_Pattern_Recgonition\KNN\KNN_Usps.py", line 49, in k_nn
+    distance[t,1] = np.linalg.norm(test_data[i] - train_data[t])
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\numpy\matrixlib\defmatrix.py", line 193, in __getitem__
+    out = N.ndarray.__getitem__(self, index)
+
+  File "C:\Users\47131\.conda\envs\pytorch\lib\site-packages\numpy\matrixlib\defmatrix.py", line 169, in __array_finalize__
+    if (isinstance(obj, matrix) and obj._getitem): return
+
+

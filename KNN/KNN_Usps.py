@@ -7,10 +7,12 @@
 import h5py
 import pandas as pd
 import numpy as np
+import swanlab
 
+swanlab.init(experiment_name="KNN_Usps")
 # 读取 USPS数据集
 def pre_handle():
-    with h5py.File( 'usps.h5') as hf:
+    with h5py.File( 'data/usps.h5') as hf:
             train = hf.get('train')
             x_train = train.get('data')[:]
             y_train = train.get('target')[:]
@@ -56,6 +58,7 @@ def k_nn(train_data,train_label,test_data,test_label):
         if prediction == test_label[i]:
             accuracy += 1
     Accuracy = accuracy/2007
+    swanlab.log({"Accurary":Accuracy})
     if k==1:
         print(f"k={k}时，Iris数据集的最近邻准确率为：",Accuracy)
     else:
@@ -79,7 +82,8 @@ plt.ylabel('Accuracy')
 plt.ylim((0.5,1))            # y坐标的范围
 #画图
 plt.plot(x,Res,'r')
-plt.savefig("k近邻_Usps.jpg",dpi=2000)
+swanlab.log({"KNN_Usps":swanlab.Image(plt)})
+plt.savefig("result/KNN_Usps.jpg",dpi=2000)
 
 
 
