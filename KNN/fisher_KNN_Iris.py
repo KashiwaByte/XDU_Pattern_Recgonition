@@ -8,7 +8,7 @@ from sklearn import model_selection
 from sklearn import datasets
 import swanlab
 
-iris = pd.read_csv('KNN_PR\iris.data',header=None,sep=',')
+iris = pd.read_csv('data\iris.data',header=None,sep=',')
 
 X, y = datasets.load_iris(return_X_y=True)
 
